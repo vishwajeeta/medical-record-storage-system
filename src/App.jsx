@@ -206,7 +206,7 @@ export default function ConnectWallet() {
 
   return (
     <div style={{ textAlign: "center", padding: "20px"}}>
-      <h1>Genomic Data Storage</h1>
+      <h1>Medical Data Storage</h1>
       <button onClick={connectWallet}>
         {account ? `Connected: ${account.slice(0, 6)}...${account.slice(-4)}` : "Connect Wallet"}
       </button>
