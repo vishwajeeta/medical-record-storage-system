@@ -377,7 +377,7 @@ export default function ConnectWallet() {
                   <p><strong>Data Hash:</strong> {record.dataHash}</p>
                   <p><strong>Owner DID:</strong> {record.ownerDID}</p>
                   {ipfsLinks[record.recordId] ? (
-            <p><strong>IPFS Link:</strong> <a href={ipfsLinks[record.recordId]} target="_blank" rel="noopener noreferrer">View File</a></p>
+            <p><strong>IPFS Link:</strong> <a href=`https://gateway.pinata/cloud/ipfs/${ipfsLinks[record.recordId]}` target="_blank" rel="noopener noreferrer">View File</a></p>
           ) : (
             <button onClick={() => fetchIPFSLink(record.recordId)}>Request Access</button>
           )}
